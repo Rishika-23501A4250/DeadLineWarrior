@@ -1,18 +1,19 @@
-// 1. Change MainHome to lowercase mainhome
-import MainHome from "./pages/mainhome"; 
+// 1. Change BrowserRouter to HashRouter
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 
-// 2. Change Signup to SignUp with a capital U
-import Signup from "./pages/SignUp";
+import MainHome from "./pages/mainhome";
 import Analytics from "./pages/Analytics";
 import Chatbot from "./pages/Chatbot";
 import Home from "./pages/Home";
+import Signup from "./pages/SignUp";
 import Login from "./pages/Login";
 import About from "./pages/About";
 import TaskHistory from "./pages/TaskHistory";
 
 function App() {
   return (
-    <BrowserRouter>
+    // 2. Change the tags to HashRouter here too
+    <HashRouter>
       <Routes>
 
         {/* Home */}
@@ -23,7 +24,7 @@ function App() {
         <Route path="/login" element={<Login />} />
 
         {/* App Pages */}
-        <Route path="/mainHome" element={<MainHome />} />
+        <Route path="/mainhome" element={<MainHome />} />
         <Route path="/analytics" element={<Analytics />} />
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/about" element={<About />} />
@@ -33,7 +34,7 @@ function App() {
         <Route path="*" element={<Navigate to="/" />} />
 
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
