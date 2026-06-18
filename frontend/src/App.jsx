@@ -1,11 +1,8 @@
-<<<<<<< HEAD
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+// 1. Change MainHome to lowercase mainhome
+import MainHome from "./pages/mainhome"; 
 
-import MainHome from "./pages/Mainhome";
+// 2. Change Signup to SignUp with a capital U
 import Signup from "./pages/SignUp";
-=======
-import MainHome from "./pages/mainhome";
->>>>>>> a3f99d8 (Fix import paths)
 import Analytics from "./pages/Analytics";
 import Chatbot from "./pages/Chatbot";
 import Home from "./pages/Home";
