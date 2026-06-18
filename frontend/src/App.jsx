@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import MainHome from "./pages/Mainhome";
+import Signup from "./pages/SignUp";
 import Analytics from "./pages/Analytics";
 import Chatbot from "./pages/Chatbot";
 import Home from "./pages/Home";
-import Signup from "./pages/SignUp";
 import Login from "./pages/Login";
 import About from "./pages/About";
 import TaskHistory from "./pages/TaskHistory";
