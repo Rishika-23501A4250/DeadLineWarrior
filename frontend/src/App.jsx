@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import MainHome from "./pages/Mainhome";
 import Signup from "./pages/SignUp";
+=======
+import MainHome from "./pages/mainhome";
+>>>>>>> a3f99d8 (Fix import paths)
 import Analytics from "./pages/Analytics";
 import Chatbot from "./pages/Chatbot";
 import Home from "./pages/Home";
