@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import MainHome from "./pages/MainHome";
+import MainHome from "./pages/Mainhome";
 import Analytics from "./pages/Analytics";
 import Chatbot from "./pages/Chatbot";
 import Home from "./pages/Home";
-import Signup from "./pages/Signup";
+import Signup from "./pages/SignUp";
 import Login from "./pages/Login";
 import About from "./pages/About";
 import TaskHistory from "./pages/TaskHistory";
@@ -22,7 +22,7 @@ function App() {
         <Route path="/login" element={<Login />} />
 
         {/* App Pages */}
-        <Route path="/mainhome" element={<MainHome />} />
+        <Route path="/mainHome" element={<MainHome />} />
         <Route path="/analytics" element={<Analytics />} />
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/about" element={<About />} />
