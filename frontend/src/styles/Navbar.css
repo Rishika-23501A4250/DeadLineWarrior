@@ -1,0 +1,55 @@
+/* Navbar Shell container */
+.custom-navbar {
+  background-color: #4f46e5; 
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.navbar-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Base Nav Item Link */
+.nav-item {
+  color: #e0e7ff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+  background-color: #6366f1; 
+  color: white;
+}
+
+/* ⚡ MANUAL ACTIVE STATE HIGHLIGHT ⚡ */
+.nav-item.active-highlight {
+  background-color: #818cf8 !important; /* Forces the lighter color layer */
+  color: white !important;
+  font-weight: 700 !important;
+}
+
+/* Logout Button */
+.logout-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 8px;
+}

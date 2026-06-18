@@ -1,0 +1,157 @@
+/* ==========================================================================
+   Analytics Donut Chart Layout
+   ========================================================================== */
+
+.chart-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 35px 0;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.donut-container {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.donut-container:hover {
+  transform: scale(1.02);
+}
+
+.donut-chart {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.donut-hole {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 28px;
+  color: #2c3e50;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.donut-hole::after {
+  content: "Total Tasks";
+  font-size: 11px;
+  color: #95a5a6;
+  text-transform: uppercase;
+  margin-top: 4px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+}
+.filter-container select {
+  border: 1px solid #dcdde1;
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.filter-container select:focus {
+  border-color: #3498db;
+}
+/* ==========================================================================
+   Quick Insights Styles
+   ========================================================================== */
+
+.quick-insights-container {
+  margin-top: 40px;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.insights-title {
+  font-size: 18px;
+  color: #1e293b;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.insights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 450px; /* Restricts width exactly like a sidebar panel widget */
+}
+
+.insight-item {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #f1f5f9;
+  border-radius: 16px;
+  padding: 16px;
+  gap: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+/* Icon Containers with Rounded Borders */
+.insight-icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.blue-bg { background-color: #eff6ff; }
+.orange-bg { background-color: #fff7ed; }
+.yellow-bg { background-color: #fefce8; }
+
+/* Text Content Layouts */
+.insight-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.insight-label {
+  font-size: 13px;
+  color: #475569;
+  font-weight: 600;
+}
+
+.insight-value {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 2px 0;
+  line-height: 1;
+}
+
+.blue-text { color: #2563eb; }
+.orange-text { color: #ea580c; }
+.yellow-text { color: #ca8a04; }
+
+/* Trends labels typography */
+.insight-trend {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.insight-trend.positive { color: #16a34a; }
+.insight-trend.negative { color: #dc2626; }
+.insight-trend.neutral { color: #64748b; }
